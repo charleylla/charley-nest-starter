@@ -1,5 +1,6 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { ArticlesService } from './articles.service';
+import { TestValidationDto } from '~dto/article.dto';
 
 @Controller('articles')
 export class ArticlesController {
@@ -7,5 +8,10 @@ export class ArticlesController {
   @Get()
   getArticleList(){
     return this.articlesService.getArticleList();
+  }
+
+  @Get("/testValidation/:id")
+  testValidation(@Param() id:TestValidationDto){
+    console.log(id)
   }
 }

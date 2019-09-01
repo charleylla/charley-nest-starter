@@ -2,10 +2,10 @@ import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { JwtService } from '@nestjs/jwt';
-import { FrameUtil } from '../../../framework/common/frame-util';
-import { BaseViewModel } from '../../../framework/common/base-view-model';
-import { AuthUserEntity } from '../../entities/auth.entity';
-import { AuthUserDto } from '../../dto/auth.dto';
+import { FrameUtil } from '~framework/common/frame-util';
+import { BaseViewModel } from '~framework/common/base-view-model';
+import { AuthUserEntity } from '~entities/auth.entity';
+import { AuthUserDto } from '~dto/auth.dto';
 
 @Injectable()
 export class AuthService {

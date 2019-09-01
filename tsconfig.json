@@ -9,7 +9,16 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "rootDir": ".",
+    "paths": {
+      "~framework/*":["src/framework/*"],
+      "~solution/*":["src/solution/*"],
+      "~business/*":["src/solution/business/*"],
+      "~dto/*":["src/solution/dto/*"],
+      "~entities/*":["src/solution/entities/*"],
+      "~/*":["src/*"]
+    }
   },
   "exclude": ["node_modules", "dist"]
 }
