@@ -331,6 +331,14 @@
     express "4.17.1"
     multer "1.4.2"
 
+"@nestjs/swagger@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/@nestjs/swagger/download/@nestjs/swagger-3.1.0.tgz#eea2d2ef7416a588e5f122b58cd194884e265dc4"
+  integrity sha1-7qLS73QWpYjl8SK1jNGUiE4mXcQ=
+  dependencies:
+    lodash "4.17.14"
+    path-to-regexp "3.0.0"
+
 "@nestjs/testing@^6.0.0":
   version "6.6.3"
   resolved "https://registry.npm.taobao.org/@nestjs/testing/download/@nestjs/testing-6.6.3.tgz#bd219ce283ef689f4f959f9b653290d5cc891c8d"
@@ -3257,6 +3265,11 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.npm.taobao.org/lodash.sortby/download/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
+lodash@4.17.14:
+  version "4.17.14"
+  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha1-nOSHrmbJYlT+ILWZ8htoFgKAeLo=
+
 lodash@^4.17.11, lodash@^4.17.13:
   version "4.17.15"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
@@ -3936,6 +3949,11 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+path-to-regexp@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-3.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-to-regexp%2Fdownload%2Fpath-to-regexp-3.0.0.tgz#c981a218f3df543fa28696be2f88e0c58d2e012a"
+  integrity sha1-yYGiGPPfVD+ihpa+L4jgxY0uASo=
 
 path-type@^1.0.0:
   version "1.1.0"
@@ -4809,6 +4827,18 @@ supports-color@^6.1.0:
   integrity sha1-B2Srxpxj1ayELdSGfo0CXogN+PM=
   dependencies:
     has-flag "^3.0.0"
+
+swagger-ui-dist@^3.18.1:
+  version "3.23.7"
+  resolved "https://registry.npm.taobao.org/swagger-ui-dist/download/swagger-ui-dist-3.23.7.tgz#93877c787fa91d3871fb06b612069088bb4b90e5"
+  integrity sha1-k4d8eH+pHThx+wa2EgaQiLtLkOU=
+
+swagger-ui-express@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.npm.taobao.org/swagger-ui-express/download/swagger-ui-express-4.0.7.tgz#e333441aa3bd8d18c7b83c540f077965f49e3139"
+  integrity sha1-4zNEGqO9jRjHuDxUDwd5ZfSeMTk=
+  dependencies:
+    swagger-ui-dist "^3.18.1"
 
 symbol-tree@^3.2.2:
   version "3.2.4"
