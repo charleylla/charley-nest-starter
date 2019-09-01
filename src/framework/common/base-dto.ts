@@ -1,5 +1,5 @@
 import { ApiModelProperty } from '@nestjs/swagger';
-import { IsBoolean, IsString, IsEmpty, IsNumber } from 'class-validator';
+import { IsBoolean, IsString, IsNumber, IsOptional } from 'class-validator';
 
 
 export class BaseDto<T=string> {
@@ -19,10 +19,10 @@ export class BasePagerDto {
   @ApiModelProperty({
     example:1,
     description:'当前页码',
-    default:1
+    default:1,
   })
-  @IsEmpty()
   @IsNumber()
+  @IsOptional()
   readonly page:number;
 
   @ApiModelProperty({
@@ -30,7 +30,7 @@ export class BasePagerDto {
     description:'每页显示的数量',
     default:10
   })
-  @IsEmpty()
   @IsNumber()
+  @IsOptional()
   readonly size:number;
 }
